@@ -5,7 +5,7 @@ MLP architecture used in Appendix A.1 of:
 
 import torch
 import torch.nn as nn
-from utils import sinusoidal_embedding
+from ..utils import sinusoidal_embedding
 
 
 
