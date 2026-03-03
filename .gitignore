@@ -1,6 +1,7 @@
 __pycache__/
 checkpoints/
 logs/
+assets/
 
 venv/
 .env/

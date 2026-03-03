@@ -11,10 +11,10 @@ from torch.optim import Adam
 from torch.utils.data import DataLoader, Dataset
 from tqdm import tqdm
 
-from models.mlp import NN
-from models.unet import UNet
-from ddpm import DDPM
-from utils import GaussianDataset, set_seed
+from src.models.mlp import NN
+from src.models.unet import UNet
+from src.ddpm import DDPM
+from src.utils import GaussianDataset, set_seed
 
 
 SEED = 0
