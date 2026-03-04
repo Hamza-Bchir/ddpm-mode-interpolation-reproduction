@@ -445,7 +445,7 @@ def main():
         )
 
         # hallucination scores per sample (B,)
-        hall = hallucination_metric(x0_traj, unbiased=False).detach().cpu()
+        hall = hallucination_metric(x0_traj).detach().cpu()
         hall_sorted, idx = torch.sort(hall, descending=True)
 
         k = min(args.hall_topk, args.sample_n)
