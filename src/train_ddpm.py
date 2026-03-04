@@ -12,7 +12,7 @@ from torch.utils.data import DataLoader, Dataset
 from tqdm import tqdm
 
 from src.models.mlp import NN
-from src.models.unet import UNet
+from src.models.unet_ddpm_torch.unet import UNet
 from src.ddpm import DDPM
 from src.utils import GaussianDataset, set_seed
 
