@@ -24,7 +24,7 @@ def main():
     p.add_argument(
         "--ckpt_path",
         type=str,
-        default="checkpoints/ddpm.pt",
+        default="checkpoints/ddpm_gaussian.pt",
         help="Path to checkpoint file containing cfg and model_state_dict.",
     )
 
@@ -112,7 +112,7 @@ def main():
             bins=args.bins,
             density=False,
             alpha=args.alpha,
-            label="Real (MoG preset)",
+            label="Real",
         )
         plt.hist(
             gen_1d.numpy(),
